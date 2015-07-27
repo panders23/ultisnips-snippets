@@ -1,0 +1,11 @@
+snippet if "nginx if" 
+if ($1) {
+   $0
+}
+endsnippet
+
+snippet location "nginx location"
+location ${1:= /} {
+	$0
+}
+endsnippet
