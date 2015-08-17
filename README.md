@@ -5,7 +5,7 @@ my personal ultisnips snippets
 ```vim
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-Plug 'git@github.com:panders23/ultisnips-snippets.git'
+Plug 'panders23/ultisnips-snippets'
 
 let g:UltiSnipsSnippetsDir = "~/.vim/plugged/ultisnips-snippets/UltiSnips_panders23"
 let g:UltiSnipsSnippetDirectories = ["UltiSnips", 'UltiSnips_panders23']
