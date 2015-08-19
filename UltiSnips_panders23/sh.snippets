@@ -1,0 +1,46 @@
+snippet doc "doc block" !b
+#-----------------------------------------------------------------------
+#  $0
+#-----------------------------------------------------------------------
+endsnippet
+
+snippet doc_h "doc header" !b
+#=======================================================================
+#
+#          FILE:  ${1:`!p snip.rv = snip.fn or "untitled"`}
+#
+#         USAGE:  ./$1
+#
+#   DESCRIPTION:  $2
+#
+#       OPTIONS:  ---
+#  REQUIREMENTS:  ---
+#          BUGS:  ---
+#         NOTES:  ---
+#        AUTHOR:  `git config user.name` (`git config user.email`)
+#       VERSION:  1.0
+#       CREATED:  `!v strftime("%c")`
+#      REVISION:  ---
+#=======================================================================
+endsnippet
+
+snippet doc_fp "doc function" !b
+#===  FUNCTION  ========================================================
+#         NAME: ${1:function}
+#  DESCRIPTION: $2
+${3:#   PARAMETERS: $4}
+${5:#      RETURNS: $6}
+#=======================================================================
+endsnippet
+
+snippet doc_f "doc function" !b
+#===  FUNCTION  ========================================================
+#         NAME: $1
+#  DESCRIPTION: $2
+${3:#   PARAMETERS: $4}
+${5:#      RETURNS: $6}
+#=======================================================================
+${1:function}() {
+	$0
+}
+endsnippet
