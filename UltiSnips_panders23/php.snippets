@@ -97,8 +97,16 @@ try {
 }
 endsnippet
 
-snippet d "php doc" !b
+snippet d "phpdoc block" !b
 /**
  * $0
  */
+endsnippet
+
+snippet ds "phpdoc singleline " !b
+/** $0 */
+endsnippet
+
+snippet dsv "phpdoc singleline for variables" !b
+/** @var ${2:stdClass} ${1:var} ${0:description} */
 endsnippet
